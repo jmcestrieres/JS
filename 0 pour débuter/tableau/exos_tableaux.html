@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    
+    // Les Trois Mousquetaires
+
+const mousquetaires = ["Athos", "Porthos", "Aramis"];
+
+console.log("Voici les Trois Mousquetaires:");
+for (let i = 0; i < mousquetaires.length; i++) {
+  console.log(mousquetaires[i]);
+}
+
+mousquetaires.push("D'Artagnan");
+console.log("Ils sont quatre à présent:");
+mousquetaires.forEach(mousquetaire => {
+  console.log(mousquetaire);
+});
+
+mousquetaires.splice(2, 1);
+console.log("Le pauvre Aramis est mort...");
+for (const mousquetaire of mousquetaires) {
+  console.log(mousquetaire);
+}
+
+//-------------------------------------------
+
+
+// Somme des valeurs
+
+const nombres = [11, 3, 7, 2, 9, 10];
+
+let somme = 0;
+
+// Solution avec la méthode forEach()
+nombres.forEach(nombre => {
+  somme += nombre;
+});
+
+// Solution alternative avec une boucle for-of
+/* for (const nombre of nombres) {
+  somme += nombre;
+} */
+
+console.log(somme);
+
+
+//-------------------------------------------
+
+
+// Maximum d'un tableau
+
+const valeurs = [3, 11, 7, 2, 9, 10];
+
+// On initialise la maximum avec le 1er élément du tableau
+let max = valeurs[0];
+
+// On commence la recherche au second élément (indice 1)
+for (let i = 1; i < valeurs.length; i++) {
+  // Si la valeur courante est supérieure au maximum actuel...
+  if (valeurs[i] > max) {
+    // ... Elle devient le nouveau maximum
+    max = valeurs[i];
+  }
+}
+
+console.log(max);
+
+
+
+    
+    
+    </script>
+</body>
+</html>

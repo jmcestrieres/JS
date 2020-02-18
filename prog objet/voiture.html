@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POO / Exemple</title>
+</head>
+<body>
+    <script src="voiture.js"></script>
+    <script>
+        let maTesla = new Voiture("Tesla", "jaune");
+        let monAutreTesla = new Voiture("Honda","rouge");
+        
+        console.log(maTesla);
+        console.log(monAutreTesla);
+        console.log("ma voiture 1", maTesla.marque);
+        console.log("couleur de ma voiture", maTesla.couleur);
+        console.log("ma voiture 2", monAutreTesla.marque);
+        
+        console.log(maTesla.klaxonner());
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FizzBuzz</title>
+</head>
+
+<body>
+    <script>
+
+// FizzBuzz
+
+// Solution avec des if/else
+for (let nombre = 1; nombre <= 100; nombre++) {
+  if (nombre % 3 === 0 && nombre % 5 === 0) console.log("FizzBuzz");
+  else if (nombre % 3 === 0) console.log("Fizz");
+  else if (nombre % 5 === 0) console.log("Buzz");
+  else console.log(nombre);
+}
+
+// Solution alternative construisant le message par concaténation
+/* for (let nombre = 1; nombre <= 100; nombre++) {
+  let message = ""; // Message initial vide
+  if (nombre % 3 === 0) {
+    // on ajoute "Fizz" au message
+    message += "Fizz";
+  }
+  if (nombre % 5 === 0) {
+    // on ajoute "Buzz" au message
+    message += "Buzz";
+  }
+  if (message === "") {
+    // Message vide : on affiche le nombre
+    message = nombre;
+  }
+  console.log(message);
+} */
+
+
+
+    </script>
+</body>
+
+</html>

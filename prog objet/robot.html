@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Robot</title>
+</head>
+<body>
+    <script src="robot.js"></script>
+    <script src="SuperRobot.js"></script>
+
+    <script>
+    
+    let monRobot = new Robot("2","2","2","0","1","1","1","1");
+    let monSuperRobot = new SuperRobot();
+    console.log(monRobot);
+    console.log("mon robot se nome ", monRobot.name, "Nono");
+    console.log("mon robot à ", monRobot.jambes, "jambes");
+    console.log("mon robot à ", monRobot.bras, "bras");
+    console.log("mon robot à ", monRobot.yeux, "yeux");
+    console.log("mon robot à ", monRobot.oreille, "oreille");
+    console.log("mon robot à ", monRobot.bouche, "bouche");
+    console.log("mon robot à ", monRobot.tete, "tete");
+    console.log("mon robot à ", monRobot.corp, "corp");
+    console.log("mon robot à ", monRobot.antenne, "antenne");
+    
+    console.log(monRobot.sauter());
+    console.log(monRobot.marcher());
+    console.log(monRobot.reculer());
+    console.log(monRobot.monter());
+    console.log(monRobot.parlerReussite());
+    console.log(monRobot.parlerRater());
+
+    //Super robot
+    monSuperRobot.supersaut();
+    monSuperRobot.monter();
+    monSuperRobot.rangepannier();
+    
+    
+    
+    
+    
+    
+    </script>
+
+</body>
+</html>

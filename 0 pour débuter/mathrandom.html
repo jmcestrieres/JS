@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+     <head>
+          <title>TD : Jeu du "plus ou moins"</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+          
+
+
+
+
+
+          
+
+
+     </head>
+     <body>
+        
+          <!-- <p>
+               <a href="#" onclick="javascript:PoM_partie(1,63)">Niveau Z&eacute;r0</a><br />
+               <a href="#" onclick="javascript:PoM_partie(1,100)">Niveau Normal</a><br />
+               <a href="#" onclick="javascript:PoM_partie(0,250)">Niveau Geek</a>
+          </p>
+                
+      -->
+     
+          <script type="text/javascript">
+          
+
+               // function nb_aleatoire(min, max)
+               // {
+               //      var nb = min + (max-min+1)*Math.random();
+               //      return Math.floor(nb);
+               // }
+                     
+               // function PoM_manche(min, max)
+               // {
+               //      var nb = nb_aleatoire(min, max);        // nb a deviner
+               //      var cpt = 0;    // nb de coups pour le trouver
+               //      var saisie;     // nb tape par le joueur
+               //      var msg = 'Le nombre a deviner est compris entre ' + min + ' et ' + max + '.';
+     
+               //      do
+               //      {
+               //           saisie = prompt(msg);
+     
+               //           // si "Annuler"
+               //           if(saisie == null)
+               //                return 0;
+     
+               //           cpt++;
+               //           if(saisie > nb)
+               //                msg = "C'est moins";
+               //           else
+               //                msg = "C'est plus";
+               //      }
+               //      while(saisie != nb);
+     
+               //      return cpt;
+               // }
+                     
+               // function PoM_partie(min, max)
+               // {
+               //      var cpt = 0;    // nb de manches jouees
+               //      var best_score = 0;     // meilleur score
+               //      var score;      // score de la partie en cours
+               //      var continuer;
+     
+               //      do
+               //      {
+               //           score = PoM_manche(min, max);   // joue la manche
+               //           if(score)
+               //           {
+               //                cpt++;
+               //                if(score < best_score || best_score == 0)
+               //                     best_score = score;
+               //                continuer = confirm("Bravo, tu as gagne en " + score + " coups.\nVeux-tu rejouer ?");
+               //           }
+               //           else
+               //                continuer = false;
+               //      }
+               //      while(continuer);
+     
+               //      alert("Tu as joue " + cpt + " manche(s).\nTon meilleur score est de " + best_score + " coups.");
+               //      return best_score;
+               // }
+     
+               
+     // Enfin le jeu du nombre mystère :)
+     
+     //         Faites choisir un nombre aléatoire à l'ordinateur (chercher "random")
+     
+     //         Puis faites-le deviner à l'utilisateur :
+     
+     //         - s'il le trouve, c'est gagné !
+     //         - si le nombre proposé est trop grand : dites-le lui et proposez-lui de retenter un autre nombre
+     //         - s'il est trop petit : idem 
+     
+     //         Limitez enfin le nombre de tentatives à 10.
+     
+     //         ##############################################################""
+     
+             
+             
+             
+             console.log("Jeu mystère");
+     
+             for (nbCoups = 1; nbCoups <= 10; nbCoups++) {
+     
+                 let nbrMyst = (Math.floor(Math.random() * 10));
+                 console.log(nbrMyst);
+                 let userChoice = (prompt("Trouver le nombre mystère"));
+                 console.log(nbCoups);
+     
+                 if (userChoice > nbrMyst) {
+                     alert("Reessaie, t'as vu trop gros");
+                 } else if (userChoice < nbrMyst) {
+                     alert("Retente ta chance, t'as vu trop petit");
+                 } else {
+                     alert("bravo !");
+                     break;
+                 }
+                 if (nbCoups === 5) {
+                     alert("T'as utilisé toutes tes chances, domage! ");
+                 }
+             }
+     
+     
+     
+     
+     </script>
+     
+     
+     
+     
+     </body>
+</html>

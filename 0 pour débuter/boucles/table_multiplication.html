@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table_multiplication</title>
+</head>
+<body>
+    <script>
+    
+    // Table de multiplication
+
+// Faites varier cette variable entre 1 et 10
+
+
+let nombre = Number(prompt("quelle table de multiplication voulez vous afficher ?")); 
+        
+       
+
+
+
+        while (isNaN (nombre)) { 
+            alert("ceci n'est pas un nombre correct");
+            nombre = Number(prompt("veuillez rentrer un nombre"));
+
+        }
+        
+
+       
+
+console.log(`Table de multiplication de ${nombre}`);
+document.write(`Table de multiplication de ${nombre}` + "<br>");
+
+// Solution avec un for
+for (let i = 1; i <= 10; i++) {
+  console.log(`${nombre} x ${i} = ${nombre * i}`);
+  document.write(`${nombre} x ${i} = ${nombre * i}` + "<br>");
+}
+
+// Solution alternative avec un while
+/* let i = 1;
+while (i <= 10) {
+  console.log(`${nombre} x ${i} = ${nombre * i}`);
+  i++;
+} */
+    
+    </script>
+</body>
+</html>

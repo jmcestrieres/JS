@@ -1,0 +1,25 @@
+{
+    "Livre": "titre du livre",
+    "chapitre": [
+        {
+            "titre":"titre du chapitre 1",
+            "contenu" : "contenu du chapitre 1"
+        },
+        {
+            "titre":"titre du chapitre 2",
+            "contenu" : "contenu du chapitre 2"
+        },
+        {
+            "titre":"titre du chapitre 3",
+            "contenu" : "contenu du chapitre 3"
+        },
+        {
+            "titre":"titre du chapitre 4",
+            "contenu" : "contenu du chapitre 4"
+        },
+        {
+            "titre":"titre du chapitre 5",
+            "contenu" : "contenu du chapitre 5"
+        }
+    ] 
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+    // Nombre de voyelles
+
+function compterVoyelles(mot) {
+  let nbVoyelles = 0;
+  for (const lettre of mot) {
+    const lettreMin = lettre.toLowerCase();
+    if (
+      lettreMin === "a" ||
+      lettreMin === "e" ||
+      lettreMin === "i" ||
+      lettreMin === "o" ||
+      lettreMin === "u" ||
+      lettreMin === "y"
+    ) {
+      nbVoyelles++;
+    }
+  }
+  return nbVoyelles;
+}
+
+console.log(compterVoyelles("RadAr")); // 2
+console.log(compterVoyelles("Tic et Tac")); // 3
+console.log(compterVoyelles("Oasis Oasis Oh")); // 7
+
+
+//--------------------------------------------------------------------
+
+
+// Leet Speak
+
+// Renvoie l'équivalent "leet speak" d'une lettre
+function convertirLettreLeet(lettre) {
+  // Par défaut, la lettre ne change pas
+  let lettreLeet = lettre;
+  switch (lettre.toLowerCase()) {
+    case "a":
+      lettreLeet = "4";
+      break;
+    case "b":
+      lettreLeet = "8";
+      break;
+    case "e":
+      lettreLeet = "3";
+      break;
+    case "l":
+      lettreLeet = "1";
+      break;
+    case "o":
+      lettreLeet = "0";
+      break;
+    case "s":
+      lettreLeet = "5";
+      break;
+    case "t":
+      lettreLeet = "7";
+      break;
+  }
+  return lettreLeet;
+}
+
+// Renvoie un mot converti en "leet speak"
+function convertirMotLeet(mot) {
+  let motLeet = "";
+  for (const lettre of mot) {
+    motLeet += convertirLettreLeet(lettre);
+  }
+  return motLeet;
+}
+
+console.log(convertirMotLeet("Hello World!")); // "H3110 W0r1d!"
+console.log(convertirMotLeet("Noob")); // "N008"
+console.log(convertirMotLeet("Hacker")); // "H4ck3r"
+
+//-------------------------------------------------------
+
+
+// Palindrome
+
+// Renvoie l'inverse du mot passé en paramètre
+const inverser = mot => {
+  let motInverse = "";
+
+  // Solution 1 : ajouter chaque lettre au début du mot inversé
+  for (const lettre of mot) {
+    motInverse = lettre + motInverse;
+  }
+
+  // Solution 2 : parcourir le mot de la fin vers le début
+  /* for (let i = mot.length - 1; i >= 0; i--) {
+    motInverse = motInverse + mot[i].toLowerCase();
+  } */
+  return motInverse;
+};
+
+// Renvoie vrai si le mot est un palindrome, faux sinon
+const estPalindrome = mot => {
+  // On compare les chaînes en minuscules
+  return inverser(mot).toLowerCase() === mot.toLowerCase();
+};
+
+console.log(estPalindrome("RadAr")); // true
+console.log(estPalindrome("KAYAk")); // true
+console.log(estPalindrome("Bora-Bora")); // false
+    
+    </script>
+    
+
+
+
+
+
+</body>
+</html>

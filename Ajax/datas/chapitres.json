@@ -1,0 +1,19 @@
+[
+    {
+        "titre": "Bienvenue",
+        "texte": "Bienvenue sur mon site ! Plein de lorem ipsum..." 
+    },
+    {
+        "titre": "chapitre 1 : un chapitre pour débuter",
+        "texte": "ici le texte de mon chapitre 1"
+    },
+    {
+        "titre": "chapitre 2 : un autre chapitre",
+        "texte": "ici le texte de mon chapitre 2"
+    },
+    {
+        "titre": "chapitre 3 : encore un autre chapitre",
+        "texte": "ici le texte de mon chapitre 3"
+    }
+    
+]
